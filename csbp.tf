@@ -29,3 +29,22 @@ resource "prismacloud_compliance_standard_requirement" "storage_reqs" {
 ########################################################################################
 # Network Security Requirements
 ########################################################################################
+
+resource "prismacloud_compliance_standard_requirement" "network_reqs" {
+    cs_id = prismacloud_compliance_standard.csbp_standard.cs_id
+    name = "Network"
+    description = "Network Governance Controls"
+    requirement_id = "2.0"
+}
+
+    resource "prismacloud_compliance_standard_requirement_section" "access" {
+        csr_id = prismacloud_compliance_standard_requirement.network_reqs.csr_id
+        section_id = "Access"
+        description = "Access Controls"
+    }
+
+    resource "prismacloud_compliance_standard_requirement_section" "encryption" {
+        csr_id = prismacloud_compliance_standard_requirement.network_reqs.csr_id
+        section_id = "Encryption"
+        description = "Network Encryption Controls"
+    }
