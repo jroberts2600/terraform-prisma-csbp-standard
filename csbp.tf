@@ -37,13 +37,13 @@ resource "prismacloud_compliance_standard_requirement" "network_reqs" {
     requirement_id = "2.0"
 }
 
-    resource "prismacloud_compliance_standard_requirement_section" "access" {
+    resource "prismacloud_compliance_standard_requirement_section" "n_access" {
         csr_id = prismacloud_compliance_standard_requirement.network_reqs.csr_id
         section_id = "Access"
         description = "Access Controls"
     }
 
-    resource "prismacloud_compliance_standard_requirement_section" "encryption" {
+    resource "prismacloud_compliance_standard_requirement_section" "n_encryption" {
         csr_id = prismacloud_compliance_standard_requirement.network_reqs.csr_id
         section_id = "Encryption"
         description = "Network Encryption Controls"
