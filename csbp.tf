@@ -1,7 +1,7 @@
 resource "prismacloud_compliance_standard" "csbp_standard" {
     name = "ABBA Cloud Security Standards"
     description = "Cloud Security Standards for ABBA Organization"
-
+}
 
 ########################################################################################
 # Storage Requirements
