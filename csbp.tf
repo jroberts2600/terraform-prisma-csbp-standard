@@ -12,6 +12,6 @@ resource "prismacloud_compliance_standard_requirement" "encryption_requirement" 
 }
 
 resource "prismacloud_compliance_standard" "csbp_standard" {
-    name = "NG20 Cloud Security Standards"
-    description = "Cloud Security Standards for NG20 Organization"
+    name = "AAA Cloud Security Standards"
+    description = "Cloud Security Standards for AAA Organization"
 }
