@@ -18,13 +18,13 @@ resource "prismacloud_compliance_standard_requirement" "storage_reqs" {
         section_id = "Access"
         description = "Public and Private Storage Access Controls"
     }
-
+/*
     resource "prismacloud_compliance_standard_requirement_section" "s_encryption" {
         csr_id = prismacloud_compliance_standard_requirement.storage_reqs.csr_id
         section_id = "Encryption"
         description = "Encryption Controls"
     }
-
+*/
 
 ########################################################################################
 # Network Security Requirements
